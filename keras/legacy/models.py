@@ -773,3 +773,9 @@ class Graph(Model):
         if not self.built:
             self.build()
         super(Graph, self).load_weights(fname)
+
+    def set_weights(self, weights):
+        if not self.built:
+            self.build()
+        super(Graph, self).set_weights(weights)
+
